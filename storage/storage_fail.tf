@@ -15,8 +15,8 @@ resource "azurerm_resource_group" "myTFgroup" {
 }
 resource "azurerm_storage_account" "myTFStorage" {
     name                        = "strgmytf"
-    resource_group_name         = "${azurerm_resource_group.myTFgroup.name}"
-    location                    = "${azurerm_resource_group.myTFgroup.location}"
+    resource_group_name         = "RG-Terraform"
+    location                    = "koreasouth"
     account_replication_type    = "LRS"
     account_tier                = "Standard"
 
