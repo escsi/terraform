@@ -96,7 +96,7 @@ resource "azurerm_network_interface" "myTFNic" {
   
 }
 resource "azurerm_storage_account" "myTFStorage" {
-    name                        = "strgmyTf"
+    name                        = "strgmytf"
     resource_group_name         = "${azurerm_resource_group.myTFgroup.name}"
     location                    = "${var.myregion}"
     account_replication_type    = "LRS"
